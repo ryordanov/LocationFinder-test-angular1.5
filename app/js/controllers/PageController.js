@@ -18,7 +18,7 @@ favoriteLocationsApp.controller('PageController',
 
         // TODO: call $scope.initialize?
         $scope.updateMap = function () {
-            loadMapsData.geocodeSrvcFn('Varna', function (cbResult) {
+            loadMapsData.geocodeSrvcFn($scope.city, function (cbResult) {
                 $scope.latitude = cbResult.results[0].geometry.location.lat();
                 $scope.longitude = cbResult.results[0].geometry.location.lng();
                 $scope.initialize();
