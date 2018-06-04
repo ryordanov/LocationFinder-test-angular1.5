@@ -8,7 +8,7 @@ favoriteLocationsApp.factory('loadMapsData', function () {
             if (status == google.maps.GeocoderStatus.OK) {
                 outerCallback({ success: true, err: null, results: results });
             } else {
-                outerCallback({ success: false, err: new Error('Geocode was not successful for the following reason: ' + status), results: null });
+                outerCallback({ success: false, err: new Error('#ERROR (Geocode was not successful): ' + status), results: null });
             }
         });
     };

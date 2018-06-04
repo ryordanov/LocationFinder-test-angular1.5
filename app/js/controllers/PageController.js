@@ -16,13 +16,15 @@ favoriteLocationsApp.controller('PageController',
 
         google.maps.event.addDomListener(window, 'load', $scope.initialize);
 
-        // TODO: call $scope.initialize?
         $scope.updateMap = function () {
             loadMapsData.geocodeSrvcFn($scope.city, function (cbResult) {
-                $scope.latitude = cbResult.results[0].geometry.location.lat();
-                $scope.longitude = cbResult.results[0].geometry.location.lng();
-                $scope.initialize();
-
+                if (cbResult.success) {
+                    $scope.latitude = cbResult.results[0].geometry.location.lat();
+                    $scope.longitude = cbResult.results[0].geometry.location.lng();
+                    $scope.initialize();
+                } else {
+                    console.log(cbResult.err);
+                }
             });
         };
     }
