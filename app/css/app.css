@@ -13,6 +13,11 @@ html, body {
     margin-top: 10px
 }
 
+#current_location {
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
 .map-overlay {
     max-width: 500px;
     height: 350px;
