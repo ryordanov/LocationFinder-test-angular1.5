@@ -14,15 +14,17 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
-    "protractor": "^4.0.9"
+    "protractor": "^4.0.9",
+    "express": "^4.16.3"
   },
   "scripts": {
     "postinstall": "bower install",
     "update-deps": "npm update",
     "postupdate-deps": "bower update",
     "_prestart": "npm install",
-    "start": "http-server -a localhost -p $PORT -c-1 ./app",
-    "start-local": "http-server -a localhost -p 8000 -c-1 ./app",
+    "start": "node web.js",
+    "start1": "http-server -p $PORT -a 0.0.0.0 -c-1 ./app",
+    "start2": "./node_modules/.bin/http-server -p $PORT ./app",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js --single-run",
