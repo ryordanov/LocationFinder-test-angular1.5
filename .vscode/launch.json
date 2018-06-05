@@ -13,7 +13,7 @@
                 "runtimeExecutable": "npm.cmd",
                 "runtimeArgs": [
                     "run",
-                    "start"
+                    "start-local"
                 ],
                 "port": 9222,
                 "protocol": "auto"
