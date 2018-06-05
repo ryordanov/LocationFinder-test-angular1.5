@@ -2,7 +2,7 @@
 
 favoriteLocationsApp.controller('PageController',
     function PageController($scope, $rootScope, LocationService) {
-        $scope.copyright = 'Блях';
+        $scope.copyright = 'Copyleft';
         $scope.city = 'Shumen';
         $scope.latitude = 43.2712398;
         $scope.longitude = 26.93612859999996;
