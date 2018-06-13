@@ -1,4 +1,4 @@
-Building a very simple web-app with Angular 1.5, Bootstrap, Fontawesome Bootstrapcheatsheets, Webpack... and using external API (GMAPS).
+Building a very simple web-app with Angular 1.5, Bootstrap, Fontawesome Bootstrapcheatsheets... and using external API (GMAPS).
 
 Running: "npm start"
 
